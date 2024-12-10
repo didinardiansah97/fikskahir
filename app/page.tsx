@@ -353,21 +353,14 @@
             }
         };
 
-        const formData: FormData = {
-            selectedSakit: "(KEP)" // Memilih "(KEP)" sebagai penyakit
+        const formDataMap: { [key: string]: FormData } = {
+            KEP: { selectedSakit: "(KEP)" },
+            hipertensi: { sakithiper: "hipertensi" },
+            diabetes: { selectedSakit: "diabetes" },
+            GERD: { selectedSakit: "(GERD)" },
+            diare: { selectedSakit: "diare" },
         };
-        const formData: FormData = {
-            selectedSakit: "hipertensi" // Memilih "(KEP)" sebagai penyakit
-        };
-        const formData: FormData = {
-            selectedSakit: "diabetes" // Memilih "(KEP)" sebagai penyakit
-        };
-        const formData: FormData = {
-            selectedSakit: "(GERD)" // Memilih "(KEP)" sebagai penyakit
-        };
-        const formData: FormData = {
-            selectedSakit: "diare" // Memilih "(KEP)" sebagai penyakit
-        };
+        
 
         const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
             const { name, value } = e.target;
