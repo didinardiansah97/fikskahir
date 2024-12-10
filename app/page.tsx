@@ -353,13 +353,7 @@
             }
         };
 
-        const formDataMap: { [key: string]: FormData } = {
-            KEP: { selectedSakit: "(KEP)" },
-            hipertensi: { sakithiper: "hipertensi" },
-            diabetes: { selectedSakit: "diabetes" },
-            GERD: { selectedSakit: "(GERD)" },
-            diare: { selectedSakit: "diare" },
-        };
+        
         
 
         const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
