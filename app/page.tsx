@@ -397,7 +397,10 @@
         // Misalnya, log atau manipulasi data
         console.log('Buah dipilih:', selectedMenu.sayur);
       }
-    selectedMenu.buah &&  
+      if (selectedMenu.buah) {
+        // Misalnya, log atau manipulasi data
+        console.log('Buah dipilih:', selectedMenu.buah);
+      }
     (!subMenuKarbohidrat.length || selectedMenu.subKarbohidrat) &&
     (!subMenuSayur.length || selectedMenu.subSayur) &&
     (!subMenuBuah.length || selectedMenu.subBuah);
