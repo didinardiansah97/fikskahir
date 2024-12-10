@@ -392,18 +392,22 @@
 
     const isMenuComplete = 
     selectedMenu.karbohidrat &&
-    selectedMenu.protein && selectedMenu.subProtein && selectedMenu.caraMasak;
-    if (selectedMenu.sayur) {
-        // Misalnya, log atau manipulasi data
-        console.log('Buah dipilih:', selectedMenu.sayur);
-      }
-      if (selectedMenu.buah) {
-        // Misalnya, log atau manipulasi data
-        console.log('Buah dipilih:', selectedMenu.buah);
-      }
+    selectedMenu.protein &&
+    selectedMenu.subProtein &&
+    selectedMenu.caraMasak &&
+    selectedMenu.sayur &&
+    selectedMenu.buah &&
     (!subMenuKarbohidrat.length || selectedMenu.subKarbohidrat) &&
     (!subMenuSayur.length || selectedMenu.subSayur) &&
     (!subMenuBuah.length || selectedMenu.subBuah);
+
+    // Logika untuk memastikan bahwa semua menu utama dan sub-menu telah dipilih
+    if (isMenuComplete) {
+    console.log('Semua menu telah dipilih dengan lengkap');
+    } else {
+    console.log('Ada menu yang belum dipilih');
+    }
+
 
     return (
         <div className="container-fluid" style={{ paddingTop: "2rem" }}>
