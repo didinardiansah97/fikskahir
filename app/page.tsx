@@ -25,7 +25,6 @@ export default function Home() {
   const [subMenuKarbohidrat, setSubMenuKarbohidrat] = useState<{ id: string; name: string }[]>([]);
   const [subMenuProtein, setSubMenuProtein] = useState([]);
   const [caraMasakOptions, setCaraMasakOptions] = useState([]);
-  const [selectedCaraMasak, setSelectedCaraMasak] = useState(""); // Untuk dropdown ke-3
   const [subMenuSayur, setSubMenuSayur] = useState<{ id: string; name: string }[]>([]);
   const [subMenuBuah, setSubMenuBuah] = useState<{ id: string; name: string }[]>([]);
   const [showMenuOptions, setShowMenuOptions] = useState(false);
@@ -395,7 +394,7 @@ export default function Home() {
   selectedMenu.karbohidrat &&
   selectedMenu.protein && selectedMenu.subProtein && selectedMenu.caraMasak;
   selectedMenu.sayur &&
-  selectedMenu.buah &&
+  selectedMenu.buah &&  
   (!subMenuKarbohidrat.length || selectedMenu.subKarbohidrat) &&
   (!subMenuSayur.length || selectedMenu.subSayur) &&
   (!subMenuBuah.length || selectedMenu.subBuah);
