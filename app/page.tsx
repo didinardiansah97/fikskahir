@@ -8,6 +8,7 @@
                 nama: "",
                 umur: "",
                 Penyakit: "",
+                selectedSakit: "",
             });
 
             const [selectedMenu, setSelectedMenu] = useState({
