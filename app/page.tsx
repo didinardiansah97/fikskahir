@@ -43,7 +43,7 @@
                 Karbohidrat: { id: string; name: string; subOptions: { id: string; name: string }[] }[];
                 Protein: { id: string; name: string; subOptions: { id: string; name: string; caraMasak: string[] }[] }[];
                 Sayur: { id: string; name: string; subOptions: { id: string; name: string }[] }[];
-                Buah: { id: string; name: string }[];
+                Buah: { id: string; name: string; subOptions: { id: string; name: string }[] }[]; // Baris yang diperbarui
             }
             
 
@@ -103,10 +103,10 @@
                     { id: "labu Siam", name: "Labu Siam", subOptions: [{ id: "sup Labu Siam Tahu", name: "Sup Labu Siam dan Tahu" }] },
                     { id: "wortel", name: "Wortel", subOptions: [{ id: "sup Wortel", name: "Sup Wortel" }] },
                 ],
-                Buah: [
+                Buah:  [
                     { id: "alpukat", name: "Alpukat", subOptions: [{ id: "jusal pukat", name: "Jus alpukat" }] },
                     { id: "pisang", name: "Pisang", subOptions: [{ id: "pisang potong", name: "pisang potong" }] },
-                    { id: "pir", name: "Pir", subOptions: [{ id: "pir", name: "Jus pir" }] }
+                    { id: "pir", name: "Pir", subOptions: [{ id: "pir", name: "Jus pir" }] },
                 ],
                 },
 
